@@ -1,0 +1,26 @@
+{
+  "name": "multirepomanager",
+  "version": "1.0.0",
+  "description": "tba",
+  "main": "main.js",
+  "type":"module",
+  "scripts": {
+    "authenticate": "node authentication.js",
+    "add_repo": "node add_repo.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misslame/multirepomanager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misslame/multirepomanager/issues"
+  },
+  "homepage": "https://github.com/misslame/multirepomanager#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "octokit": "^3.1.2"
+  }
+}
