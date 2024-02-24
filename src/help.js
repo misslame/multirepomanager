@@ -19,6 +19,8 @@ const HELP_MESSAGE =
     '         lock branch_name on each repo in list         \n' +
     '    unlock -- branch_name                                      \n' +
     '         unlock branch_name on each repo in list      \n' +
+    '    list                                                                    \n' +
+    '        Show list of currently managed repos           \n' +
     '    init                                                                    \n' +
     '         initialize repo list with given list from a file \n' +
     '    help                                                                   \n' +
