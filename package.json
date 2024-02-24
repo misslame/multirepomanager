@@ -2,11 +2,12 @@
   "name": "multirepomanager",
   "version": "1.0.0",
   "description": "tba",
-  "main": "main.js",
+  "main": "src/main.js",
   "type":"module",
   "scripts": {
-    "authenticate": "node authentication.js",
-    "add_repo": "node add_repo.js",
+    "authenticate": "node src/authentication.js",
+    "add_repo": "node src/add_remove_repo.js add",
+    "remove_repo": "node src/add_remove_repo.js remove",
     "test": "test"
   },
   "repository": {
