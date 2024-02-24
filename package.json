@@ -6,9 +6,13 @@
   "type":"module",
   "scripts": {
     "authenticate": "node src/authentication.js",
-    "add_repo": "node src/add_remove_repo.js add",
-    "remove_repo": "node src/add_remove_repo.js remove",
-    "test": "test"
+    "add": "node src/add_remove.js add",
+    "remove": "node src/add_remove.js remove",
+    "lock": "node src/lock_unlock.js lock",
+    "unlock": "node src/lock_unlock.js unlock",
+    "list": "node src/list.js",
+    "help": "node src/help.js help",
+    "init": "node src/init_repos.js"
   },
   "repository": {
     "type": "git",

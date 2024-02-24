@@ -7,7 +7,7 @@ const DEFAULT_JSON_FORMAT =  {
 };
 
 function initJsonObj() {
-    return new Promise((resolve, ) => {
+    return new Promise((resolve ) => {
         fs.readFile(PATH_TO_REPOSITORY_LIST_JSON, (err, content) => {
             if (err) {
                 resolve(DEFAULT_JSON_FORMAT);
@@ -21,7 +21,6 @@ function initJsonObj() {
 var json_obj = await initJsonObj();
 
 function repoExists(repo_owner, repo_name) {
-    console.log(json_obj);
     return json_obj.repos.some(element => {
         return element.owner == repo_owner && element.name == repo_name;
     });
@@ -46,6 +45,10 @@ export function addToRepositoryList(repo_owner, repo_name) {
             console.log('Successfully added to the repository list.');
         }
     });
+}
+
+export function getRepos() {
+    return json_obj.repos;
 }
 
 export function removeFromRepositoryList(repo_owner, repo_name) {
